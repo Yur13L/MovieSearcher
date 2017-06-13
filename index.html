@@ -1,0 +1,33 @@
+<html ng-app="mainApp">
+	<head>
+		<title>Movie Viewer TMDB API</title>
+		<meta name="viewport" content="width=device-width, initial-scale=0.7">
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" href="lib/css/bootstrap.min.css"/>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Happy+Monkey|Fredericka+the+Great|Baloo+Bhaina"/>
+		<link rel="stylesheet" media="screen" href="assets/css/customcss.css"/>
+	</head>
+	
+	<body ng-controller="mainController">
+		<!-- START JS -->
+			<!-- START External Core JS -->
+			
+			<script src="lib/js/angular.min.js"></script>
+			<script src="lib/js/angular-route.min.js"></script>
+			<script src="lib/js/ui-bootstrap-tpls.min.js"></script>
+			
+			<!-- START Local Core JS-->
+
+			<script src="app/app.module.js"></script>
+			<script src="app/app.routes.js"></script>
+			<script src="app/components/home/homeController.js"></script>
+			<script src="app/components/services/tmdbservice.js"></script>
+
+		<!-- END JS -->
+
+		<div class="{{ pageClass }} pageCommon container-fluid"	ng-view autoscroll>
+		</div>
+	</body>
+	
+</html>
