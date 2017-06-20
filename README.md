@@ -4,4 +4,4 @@ An online movie searcher that implements TMDB API made with the Frontend Technol
 * AngularJS
 * BootstrapCSS
 
-
+View it here for sample: https://yuriengracia.000webhostapp.com/
