@@ -9,24 +9,24 @@
 		<link rel="stylesheet" media="screen" href="assets/css/customcss.css"/>
 	</head>
 	
-	<body ng-controller="mainController">
+	<body>
 		<!-- START JS -->
 			<!-- START External Core JS -->
 			
 			<script src="lib/js/angular.min.js"></script>
-			<script src="lib/js/angular-route.min.js"></script>
+			<script src="lib/js/angular-ui-router.min.js"></script>
 			<script src="lib/js/ui-bootstrap-tpls.min.js"></script>
 			
 			<!-- START Local Core JS-->
 
 			<script src="app/app.module.js"></script>
-			<script src="app/app.routes.js"></script>
 			<script src="app/components/home/homeController.js"></script>
 			<script src="app/components/services/tmdbservice.js"></script>
 
 		<!-- END JS -->
 
-		<div class="{{ pageClass }} pageCommon container-fluid"	ng-view autoscroll>
+		<div class="page-home pageCommon container-fluid" ui-view>
+
 		</div>
 	</body>
 	

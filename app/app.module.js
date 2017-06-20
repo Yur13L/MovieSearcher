@@ -1,7 +1,15 @@
-angular.module('mainApp',['ngRoute', 'ui.bootstrap'])
+angular.module('mainApp',['ui.router', 'ui.bootstrap'])
 
 
-.controller('mainController', function($scope) {
+.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider){
+                $urlRouterProvider.otherwise("/");
+                 
+                $stateProvider
+                        .state('home', {
+                            url: "/",
+                            templateUrl: "app/components/home/homeView.html",
+                            controller: 'homeController'
+                        })
 
 
-});
+            }]);

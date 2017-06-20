@@ -1,5 +1,4 @@
-angular.module('mainApp').controller('homeController', function($scope, $location,TmdbService){
-	$scope.pageClass = 'page-home';
+angular.module('mainApp').controller('homeController', ['$scope','TmdbService',function($scope,TmdbService){
 	
 	$scope.searchQuery;
 	$scope.searchResult;
@@ -29,4 +28,4 @@ angular.module('mainApp').controller('homeController', function($scope, $locatio
 		});
 	};
 
-});	
+}]);	

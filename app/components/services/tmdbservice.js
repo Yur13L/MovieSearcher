@@ -1,11 +1,11 @@
-angular.module('mainApp').service('TmdbService', function($http){
+angular.module('mainApp').service('TmdbService', ['$http',function($http){
 
 	var apikey = 'f6094e71e9a97c166acb01948bcf9dfb';
 
 	var baseUrl = 'https://api.themoviedb.org/3';
 
 
-	var baseUrlImage = "http://image.tmdb.org/t/p/w300"
+	var baseUrlImage = "http://image.tmdb.org/t/p/w300";
 
 
 	this.searchMovie = function(movieName,page){
@@ -22,4 +22,4 @@ angular.module('mainApp').service('TmdbService', function($http){
 
 	};
 
-});
+}]);
